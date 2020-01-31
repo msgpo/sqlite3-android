@@ -48,6 +48,8 @@ http://www.sqlite.org/download.html
 ```bash
   make clean
   make
+  chmod +x ./build.sh
+  ./build.sh
 
   * Expected output
 

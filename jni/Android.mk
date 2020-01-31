@@ -22,7 +22,8 @@ LOCAL_SRC_FILES         := ../build/shell.c ../build/sqlite3.c
 LOCAL_C_INCLUDES        := ../build
 LOCAL_EXPORT_C_INCLUDES := ../build
 LOCAL_CFLAGS            := -DSQLITE_THREADSAFE=1 -fPIE
-LOCAL_LDFLAGS           := -fPIE -pie
+LOCAL_LDFLAGS           := -fPIE
+LOCAL_LDFLAGS           += -static
 include $(BUILD_EXECUTABLE)
 
 
