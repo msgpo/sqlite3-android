@@ -9,6 +9,7 @@ SQLITE_URL      := http://www.sqlite.org/$(SQLITE_YEAR)/$(SQLITE_BASENAME).zip
 
 # Build/Compile
 libs/armeabi-v7a/sqlite3-static: build/sqlite3.c
+libs/arm64-v8a/sqlite3-static: build/sqlite3.c
 
 # Unpack
 build/sqlite3.c: $(SQLITE_BASENAME).zip
